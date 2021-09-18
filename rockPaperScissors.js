@@ -6,5 +6,7 @@ const getUserChoice = userInput => {
         console.log('error');
       }
     };
-    
-    //console.log(getUserChoice('ros'))
+
+const getComputerChoice = () => {
+    const randomNumber = Math.floor(Math.random() * 3) 
+    switch(randomNumber) {
