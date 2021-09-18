@@ -23,7 +23,7 @@ const getComputerChoice = () => {
   }
 }
 
-console.log(getComputerChoice())
-console.log(getComputerChoice())
-console.log(getComputerChoice())
-console.log(getComputerChoice())
+function determineWinner(userChoice, computerChoice) {
+    if(userChoice === computerChoice) {
+      console.log('empate');
+    };
