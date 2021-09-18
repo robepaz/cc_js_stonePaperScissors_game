@@ -49,4 +49,16 @@ function determineWinner(userChoice, computerChoice) {
   }
   
   
-  console.log(determineWinner('scissors', 'stone')); 
+/* prueba funcion determina ganador
+console.log(determineWinner('scissors', 'stone')); 
+*/
+
+const playGame = () => {
+    const userChoice = getUserChoice('paper');
+    const computerChoice = getComputerChoice();
+    console.log(`jugador eligió ${userChoice}.`);
+    console.log(`máquina eligió ${computerChoice}.`);
+  
+  }
+  
+  playGame() 
