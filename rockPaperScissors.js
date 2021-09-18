@@ -24,6 +24,29 @@ const getComputerChoice = () => {
 }
 
 function determineWinner(userChoice, computerChoice) {
-    if(userChoice === computerChoice) {
+    if(userChoice === computerChoice) 
       console.log('empate');
-    };
+    else {
+      if (userChoice === 'rock') {
+      if (computerChoice === 'paper') {
+        console.log('gana computadora');
+        } else {console.log('gana jugador') 
+        } 
+      } 
+      if (userChoice === 'paper') {
+      if (computerChoice === 'scissors') {
+        console.log('gana computadora');
+        } else {console.log('gana jugador') 
+        } 
+      } 
+        if (userChoice === 'scissors') {
+        if (computerChoice === 'stone') {
+        console.log('gana computadora');
+        } else {console.log('gana jugador') 
+        } 
+     } 
+    }
+  }
+  
+  
+  console.log(determineWinner('scissors', 'stone')); 
