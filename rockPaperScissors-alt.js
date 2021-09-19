@@ -50,22 +50,17 @@ function determineWinner(userChoice, computerChoice) {
   }
 }
 
-/* prueba funcion determina ganador
-console.log(determineWinner('tijeras', 'stone')); 
-*/
-
 const playGame = () => {
-  const controlSecreto = 'papel'
-  if (controlSecreto === 'bomb') {
+  let controlSecreto = prompt('Jugador, qué eliges: piedra, papel o tijeras?')
+  if (controlSecreto === 'bomba') {
     console.log('gana jugador por ko')
   } else {
     const userChoice = getUserChoice(controlSecreto)
     const computerChoice = getComputerChoice()
-    console.log(`jugador eligió ${controlSecreto}.`)
+    console.log(`jugador eligió ${userChoice}.`)
     console.log(`computadora eligió ${computerChoice}.`)
     console.log(determineWinner(userChoice, computerChoice))
   }
 }
 
 playGame()
-
